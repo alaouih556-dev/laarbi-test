@@ -1,0 +1,6 @@
+{"ts":"2026-10-06T23:00:58.512Z","event":"diagnostic.create","by":"u-concierge","org":"org-atlas","id":"diag-1791327658511"}
+{"ts":"2026-10-06T23:00:58.528Z","event":"diagnostic.create","by":"u-collab","org":"org-atlas","id":"diag-1791327658527"}
+{"ts":"2026-10-06T23:00:58.535Z","event":"diagnostic.create","by":"u-commercial","org":"org-riad","id":"diag-1791327658534"}
+{"ts":"2026-10-06T23:00:58.548Z","event":"consent.record","by":"u-dirigeant","diagnosticId":"diag-1791327658511","version":"grille-360-v5.1"}
+{"ts":"2026-10-06T23:00:58.565Z","event":"diagnostic.create","by":"u-commercial","org":"org-riad","id":"diag-1791327658564"}
+{"ts":"2026-10-06T23:00:58.586Z","event":"read.one","by":"u-admin","id":"diag-1791327658564"}

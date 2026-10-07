@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "role": "admin",
+      "orgIds": [
+        "*"
+      ],
+      "name": "Admin ALLNEEDS"
+    },
+    {
+      "id": "u-concierge",
+      "role": "concierge",
+      "orgIds": [
+        "org-atlas",
+        "org-riad"
+      ],
+      "name": "Concierge ALLNEEDS"
+    },
+    {
+      "id": "u-commercial",
+      "role": "commercial",
+      "orgIds": [
+        "org-riad"
+      ],
+      "name": "Commercial ALLNEEDS",
+      "scope": "crm"
+    },
+    {
+      "id": "u-dirigeant",
+      "role": "dirigeant",
+      "orgIds": [
+        "org-atlas"
+      ],
+      "name": "Dr Atlas"
+    },
+    {
+      "id": "u-manager",
+      "role": "manager",
+      "orgIds": [
+        "org-atlas"
+      ],
+      "name": "Manager Atlas"
+    },
+    {
+      "id": "u-collab",
+      "role": "collaborateur",
+      "orgIds": [
+        "org-atlas"
+      ],
+      "name": "Collab Atlas"
+    },
+    {
+      "id": "u-expert",
+      "role": "expert",
+      "orgIds": [],
+      "name": "Expert Atlas"
+    }
+  ],
+  "orgs": [
+    {
+      "id": "org-atlas",
+      "name": "Santé Atlas",
+      "sector": "sante"
+    },
+    {
+      "id": "org-riad",
+      "name": "Riad Atlas",
+      "sector": "tourisme"
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "diag-1791327658511",
+      "orgId": "org-atlas",
+      "format": "Complet",
+      "sector": "sante",
+      "answers": {},
+      "consent": null,
+      "createdBy": "u-concierge",
+      "createdAt": "2026-10-06T23:00:58.511Z",
+      "updatedAt": "2026-10-06T23:00:58.511Z",
+      "consents": [
+        {
+          "acceptedAt": "2026-10-06T23:00:58.538Z",
+          "version": "grille-360-v5.1",
+          "by": "Dr Atlas",
+          "recordedAt": "2026-10-06T23:00:58.547Z",
+          "byUserId": "u-dirigeant"
+        }
+      ]
+    },
+    {
+      "id": "diag-1791327658527",
+      "orgId": "org-atlas",
+      "format": "Complet",
+      "answers": {},
+      "consent": null,
+      "createdBy": "u-collab",
+      "createdAt": "2026-10-06T23:00:58.527Z",
+      "updatedAt": "2026-10-06T23:00:58.527Z"
+    },
+    {
+      "id": "diag-1791327658534",
+      "orgId": "org-riad",
+      "format": "Express",
+      "sector": "tourisme",
+      "answers": {},
+      "consent": null,
+      "createdBy": "u-commercial",
+      "createdAt": "2026-10-06T23:00:58.534Z",
+      "updatedAt": "2026-10-06T23:00:58.534Z"
+    },
+    {
+      "id": "diag-1791327658564",
+      "orgId": "org-riad",
+      "format": "Express",
+      "answers": {},
+      "consent": null,
+      "createdBy": "u-commercial",
+      "createdAt": "2026-10-06T23:00:58.564Z",
+      "updatedAt": "2026-10-06T23:00:58.564Z"
+    }
+  ],
+  "consents": [
+    {
+      "diagnosticId": "diag-1791327658511",
+      "orgId": "org-atlas",
+      "acceptedAt": "2026-10-06T23:00:58.538Z",
+      "version": "grille-360-v5.1",
+      "by": "Dr Atlas",
+      "recordedAt": "2026-10-06T23:00:58.547Z",
+      "byUserId": "u-dirigeant"
+    }
+  ]
+}

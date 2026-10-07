@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="440" viewBox="0 0 1400 440" role="img" aria-labelledby="title desc">
+  <title id="title">ALLNEEDS — logo affiné</title>
+  <desc id="desc">Logo ALLNEEDS avec un A construit en ruban et une trajectoire qui traverse le A, dans un dégradé bleu du bleu profond au cyan.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#123FC4"/>
+      <stop offset="0.55" stop-color="#0878F9"/>
+      <stop offset="1" stop-color="#13C4E8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(64 34)" stroke="url(#blue)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M26 302 112 84c12-31 50-31 62 0l88 218"/>
+  </g>
+  <path d="M92 231c51-12 104-36 164-68l86-47c24-13 48 9 35 31-3 6-9 11-17 15L190 269c-40 23-75 41-99 29-20-10-20-55 1-67Z" fill="url(#blue)"/>
+  <text x="450" y="264" fill="#10244C" font-family="Manrope, Inter, Arial, sans-serif" font-size="156" font-weight="750" letter-spacing="-9">all</text>
+  <text x="649" y="264" fill="#0878F9" font-family="Manrope, Inter, Arial, sans-serif" font-size="156" font-weight="750" letter-spacing="-9">needs</text>
+  <text x="462" y="333" fill="#10244C" font-family="Manrope, Inter, Arial, sans-serif" font-size="36" font-weight="500" letter-spacing="1.2">Find it. Get it. Fast.</text>
+</svg>

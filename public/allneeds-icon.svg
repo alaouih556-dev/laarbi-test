@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">ALLNEEDS — icône améliorée</title>
+  <desc id="desc">Symbole A traversé par une trajectoire bleue, adapté aux petits formats.</desc>
+  <defs><linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#123FC4"/><stop offset="0.55" stop-color="#0878F9"/><stop offset="1" stop-color="#13C4E8"/></linearGradient></defs>
+  <rect x="10" y="10" width="340" height="340" rx="74" fill="#10244C"/>
+  <g transform="translate(45 40) scale(.86)" stroke="url(#blue)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M26 302 112 84c12-31 50-31 62 0l88 218"/></g>
+  <path d="M105 237c44-11 88-31 137-57l57-31c22-12 41 8 29 26-3 5-8 9-14 12L189 263c-34 20-62 35-83 25-18-9-18-42-1-51Z" fill="url(#blue)"/>
+</svg>

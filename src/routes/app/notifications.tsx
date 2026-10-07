@@ -1,0 +1,7 @@
+import { Link, createFileRoute } from '@tanstack/react-router'
+import { AlertTriangle, ArrowRight, CheckCircle2, CircleDot, Info } from 'lucide-react'
+import { PageHeader } from '@/components/layouts'
+import { useDemo } from '@/store/store'
+
+export const Route = createFileRoute('/app/notifications')({ component: NotificationsPage })
+function NotificationsPage(){const {state,dispatch}=useDemo(); const category=(tone:string,title:string): [string, typeof Info] => tone==='warning'?['ATTENTION',AlertTriangle]:tone==='success'?['RÉSULTAT',CheckCircle2]:/message|validation|devis|rendez-vous/i.test(title)?['ACTION REQUISE',CircleDot]:['INFORMATION',Info] as const;return <><PageHeader eyebrow="Notifications" title="Une notification doit conduire à l’action." description="Les notifications sont regroupées par intention et renvoient directement au dossier concerné lorsqu’un lien existe." actions={<button className="text-action" onClick={()=>dispatch({type:'NOTIF_READ_ALL'})}>Tout marquer comme lu</button>}/><div className="notification-list">{state.notifications.map(n=>{const [label,Icon]=category(n.tone,n.title);return <article key={n.id} className={n.read?'is-read':''}><span className="notification-icon"><Icon size={17}/></span><div><small>{label}</small><h2>{n.title}</h2><p>{n.body}</p><time>{new Date(n.at).toLocaleString('fr-FR',{dateStyle:'medium',timeStyle:'short'})}</time></div>{n.link?<Link to={n.link as any} onClick={()=>dispatch({type:'NOTIF_READ',id:n.id})}>Ouvrir <ArrowRight size={14}/></Link>:null}</article>})}</div></>}
